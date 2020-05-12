@@ -81,7 +81,7 @@ print  """\033[1;96m█████████
 \033[1;96m█\033[1;91m▲▲▲▲▲\033[1;95m--  - _ --\033[1;96m═╩╝┴ ┴┴└─┴ ┴   ╚  ╚═╝ \033[1;96mZeDD
 \033[1;96m█████████      \033[1;92m«----------✧----------»
 \033[1;96m ██ ██"""
-jalan('\033[1;96mEm Not Responsible Foh any Missuse Owner: ZeDD)
+jalan('\033[1;96mEm Not Responsible Foh any Missuse Owner: ZeDD')
 jalan(" ")
 jalan('\033[1;93m ')
 jalan('\033[1;93m ')
