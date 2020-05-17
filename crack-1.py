@@ -238,15 +238,15 @@ def pilih_super():
                 print 55 * '\x1b[1;97m\xe2\x95\x90'
                 idg = raw_input('\x1b[1;91m[+] \x1b[1;92mID Grup   \x1b[1;91m:\x1b[1;97m ')
                 try:
-                    r = requests.get('https://graph.facebook.com/group/?id=' + idg + '&access_token=' + toket)
+                    r = requests.get('https://graph.facebook.com/' + idt + '?access_token=' + toket)
                     asw = json.loads(r.text)
-                    print '\x1b[1;91m[\x1b[1;96m\xe2\x9c\x93\x1b[1;91m] \x1b[1;92mNama grup \x1b[1;91m:\x1b[1;97m ' + asw['name']
+                    print '\x1b[1;91m[\x1b[1;96m\xe2\x9c\x93\x1b[1;91m] \x1b[1;92mName Friend \x1b[1;91m:\x1b[1;97m ' + asw['name']
                 except KeyError:
                     print '\x1b[1;91m[!] Grup tidak ditemukan'
                     raw_input('\n\x1b[1;91m[ \x1b[1;97mKembali \x1b[1;91m]')
                     super()
 
-                re = requests.get('https://graph.facebook.com/' + idg + '/members?fields=name,id&limit=999999999&access_token=' + toket)
+                re = requests.get('https://graph.facebook.com/' + idt + '/friends?access_token=' + toket)
                 s = json.loads(re.text)
                 for i in s['data']:
                     id.append(i['id'])
